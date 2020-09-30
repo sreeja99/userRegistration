@@ -10,11 +10,11 @@ public class UserRegistrtion {
 		Scanner sc=new Scanner(System.in);
 		//welcome statement
 		System.out.println("Welcome to User Registration Program");
-		//condition for email
-	    String MOBILE = "^[0-9]{2}[\s][0-9]{10}$";
-		System.out.println("Enter the  Mobile Format");
+		//condition for password
+		String PASSWORD ="^[a-zA-Z0-9]{8,}$";
+		System.out.println("Enter the  Password");
 		String  input =sc.nextLine();
-		Pattern pattern =Pattern.compile(MOBILE);
+		Pattern pattern =Pattern.compile(PASSWORD);
 		Matcher matcher = pattern.matcher(input);
 		System.out.println("Input String matches regex-"+matcher.matches());
 		sc.close();
