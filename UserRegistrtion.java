@@ -10,11 +10,12 @@ public class UserRegistrtion {
 		Scanner sc=new Scanner(System.in);
 		//welcome statement
 		System.out.println("Welcome to User Registration Program");
-		//condition for last name
-		String lastName ="^[A-Z]{1}[a-zA-Z]{2,}$";
-		System.out.println("Enter the  Last Name");
-		String  input =sc.next();
-		Pattern pattern =Pattern.compile(lastName);
+		//condition for email
+//		String EMAIL ="^abc.(xyz)?@bl.co.(in)?$";
+		String EMAIL = "^abc(.[a-z0-9]*)?@bl.co(.in)?$";
+		System.out.println("Enter the  Email");
+		String  input =sc.nextLine();
+		Pattern pattern =Pattern.compile(EMAIL);
 		Matcher matcher = pattern.matcher(input);
 		System.out.println("Input String matches regex-"+matcher.matches());
 		sc.close();
