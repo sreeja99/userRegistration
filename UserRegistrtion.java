@@ -10,11 +10,11 @@ public class UserRegistrtion {
 		Scanner sc=new Scanner(System.in);
 		//welcome statement
 		System.out.println("Welcome to User Registration Program");
-		//condition for password
-		String PASSWORD ="^((?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%]).{8,})$";
-		System.out.println("Enter the  Password");
+		//condition for email
+		String EMAIL= "^abc([.+-][0-9])?([0-9]{1,3})?@[a-z0-9]{1,}.[a-z]{3}(.[a-z]{2,})?$";
+		System.out.println("Enter the  Email");
 		String  input =sc.nextLine();
-		Pattern pattern =Pattern.compile(PASSWORD);
+		Pattern pattern =Pattern.compile(EMAIL);
 		Matcher matcher = pattern.matcher(input);
 		System.out.println("Input String matches regex-"+matcher.matches());
 		sc.close();
