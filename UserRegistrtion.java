@@ -11,11 +11,10 @@ public class UserRegistrtion {
 		//welcome statement
 		System.out.println("Welcome to User Registration Program");
 		//condition for email
-//		String EMAIL ="^abc.(xyz)?@bl.co.(in)?$";
-		String EMAIL = "^abc(.[a-z0-9]*)?@bl.co(.in)?$";
-		System.out.println("Enter the  Email");
+	    String MOBILE = "^[0-9]{2}[\s][0-9]{10}$";
+		System.out.println("Enter the  Mobile Format");
 		String  input =sc.nextLine();
-		Pattern pattern =Pattern.compile(EMAIL);
+		Pattern pattern =Pattern.compile(MOBILE);
 		Matcher matcher = pattern.matcher(input);
 		System.out.println("Input String matches regex-"+matcher.matches());
 		sc.close();
