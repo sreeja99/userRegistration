@@ -11,7 +11,7 @@ public class UserRegistrtion {
 		//welcome statement
 		System.out.println("Welcome to User Registration Program");
 		//condition for password
-		String PASSWORD ="^[a-zA-Z0-9]{8,}$";
+		String PASSWORD ="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
 		System.out.println("Enter the  Password");
 		String  input =sc.nextLine();
 		Pattern pattern =Pattern.compile(PASSWORD);
