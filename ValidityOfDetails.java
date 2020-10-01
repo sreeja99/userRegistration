@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-//import moodAnalyzer.MoodAnalyzer;
 
 class ValidityOfDetails {
 
@@ -21,6 +20,7 @@ class ValidityOfDetails {
 		boolean actual1=obj.firName("sreeja");
 		Assert.assertEquals(expected1, actual1);
 	}
+	@Test
 	public void testlastName() {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
@@ -32,6 +32,7 @@ class ValidityOfDetails {
 		boolean actual1=obj.lastName("godishala");
 		Assert.assertEquals(expected1, actual1);
 	}
+	@Test
 	public void testMobile() {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
@@ -43,6 +44,7 @@ class ValidityOfDetails {
 		boolean actual1=obj.mobile("38184798");
 		Assert.assertEquals(expected1, actual1);
 	}
+	@Test
 	public void testEmail() {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
@@ -54,6 +56,7 @@ class ValidityOfDetails {
 		boolean actual1=obj.email("ab@bl.co");
 		Assert.assertEquals(expected1, actual1);
 	}
+	@Test
 	public void testPassword() {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
