@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class ValidityOfDetails {
 
 	@Test
-	public void testFirstName() {
+	public void testFirstName()  {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
 		boolean expected=true;
@@ -21,7 +21,7 @@ class ValidityOfDetails {
 		Assert.assertEquals(expected1, actual1);
 	}
 	@Test
-	public void testlastName() {
+	public void testlastName()  {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
 		boolean expected=true;
@@ -33,7 +33,7 @@ class ValidityOfDetails {
 		Assert.assertEquals(expected1, actual1);
 	}
 	@Test
-	public void testMobile() {
+	public void testMobile()  {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
 		boolean expected=true;
@@ -57,7 +57,7 @@ class ValidityOfDetails {
 		Assert.assertEquals(expected1, actual1);
 	}
 	@Test
-	public void testPassword() {
+	public void testPassword()  {
 		//happy
 		UserRegistrtion obj=new UserRegistrtion();
 		boolean expected=true;
