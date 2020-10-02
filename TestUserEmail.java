@@ -28,7 +28,7 @@ public class TestUserEmail {
 		return Arrays.asList(new Object [][] {{"abc@yahoo.com",true},{"abc@.com",true},{"abc@1.com",true}});
 	}
 	@Test
-	public void testMultipleEntryTest() {
+	public void testMultipleEntryTest() throws InvalidException {
 	System.out.println("Input:"+Input);
 	Assert.assertEquals(Output,userEmail.email(Input));
 	}
